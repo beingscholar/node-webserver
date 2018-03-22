@@ -46,14 +46,14 @@ app.get('/', (req, res) => {
     }); */
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        message: 'Welcome to Express.JS'
+        message: 'Welcome to my website.'
     })
 });
 
 app.get('/about', (req, res) => {
     // res.send('About Page');
     res.render('about.hbs', {
-        pageTitle: 'About Page'
+        pageTitle: 'About Us'
     });
 });
 
