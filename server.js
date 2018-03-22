@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
     }); */
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to Express.JS'
+        message: 'Welcome to Express.JS'
     })
 });
 
@@ -54,6 +54,13 @@ app.get('/about', (req, res) => {
     // res.send('About Page');
     res.render('about.hbs', {
         pageTitle: 'About Page'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Project Page',
+        message: 'Portfolio page here'
     });
 });
 
